@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+nav {
+  background: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.connection-status {
+  background: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.connect-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.connect-form input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #cc0000;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.setup-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.video-item {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.video-item:hover {
+  transform: translateY(-2px);
+}
+
+.video-thumbnail {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-info {
+  padding: 1rem;
+}
+
+.video-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#video-player {
+  width: 100%;
+}
